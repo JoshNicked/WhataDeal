@@ -1,0 +1,594 @@
+body{
+    margin: 0;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navigation{
+    background-color: #31363F;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#main-logo {
+    display: flex;
+    height: 4.6rem;
+    border: solid 5px #31363F;
+    border-radius: 33px;
+    margin-left: 0.5rem;   
+}
+
+.options-menu{/*navigatation ul*/
+    margin: 0%;
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    right: 0.3%;
+}
+
+.options-menu li{
+    display: inline-block;
+    position: relative;    
+}
+
+.options-menu li a{
+    display: block;
+    padding: 0.6rem;
+    padding-left: 0%;
+    font-size: large;
+    font-family: "Roboto", sans-serif ;
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+    height: 3.7rem; /*For background hover, heisght of the ul*/
+    margin: 0.3rem;
+    margin-top: 0%;
+}
+
+.options-menu li.choices{
+    height: 2.9rem;
+    text-align: left;
+}
+
+.options-menu li.choices a{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.options-menu li ul.drop-down-option li{/*dropdown contents*/
+    display: block;
+    background: #222831;
+    margin: 0.3rem ;
+    border-radius: 5px;
+}
+
+.options-menu li ul.drop-down-option{
+    width: 6.75rem; /*of drop-down menu outer background*/
+    padding: 0px;
+    background: #31363F;
+    position: absolute;
+    left: 0%;/*Category dropdown allignment*/
+    border-radius: 0px 0px 12px 12px;
+    display: none;
+}
+
+.options-menu li.options:hover{
+    background: #76ABAE;
+}
+
+.options-menu li.choices:hover{
+    background: #76ABAE;
+}
+
+.options-menu li:hover ul.drop-down-option{
+    display: block;
+}
+
+.search-div{
+    margin-top: 2.41rem;
+    margin-left: clamp(6rem, 10vw, 5rem);
+    display: inline-flex;
+    transform: translate(-50%,-50%);
+    transition: all 0.3s;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 23px;
+    border: 4px solid #222831;
+    padding: 5px;
+}
+
+.main-search-bar{
+    position: absolute;
+    left: 0;
+    width: 69%;
+    height: 81%;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+    margin-left: 18px;    
+}
+
+.search-div img{
+    position: absolute;
+    height: 1.5rem;
+}
+
+.search-div:hover{
+    width: 200px;
+}
+
+.search-div:hover input{
+    display: block;
+}
+
+.clicked-input{
+    width: 200px;
+}
+
+.clicked-input input{
+    display: block;
+}
+
+.suggest-search{ /*suggestion auto complete div, below search div*/
+    width: 92%;
+    margin-left: 9px;
+    margin-top: 1.91rem;
+    border-radius: 10px 10px 11px 11px ;
+}
+
+.suggest-search div{
+    background-color: white;
+    transition: transform 0.4s ease; /*For it to be slow*/
+    border-radius: 6px;
+}
+
+.suggest-search div:hover{
+    transform: scale(1.1,1.1);
+    background-color: #76ABAE;
+    color: white;
+}
+
+.suggest-search a div{
+    text-decoration: none;
+    margin-top: 0px;
+    padding: 8px 0px 8px 0px;
+    padding-left: 20px;
+    font-family: 'Roboto',sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+}
+
+.options-menu li.options:hover{
+    background: #76ABAE;
+}
+
+.options-menu li.choices:hover{
+    background: #76ABAE;
+}
+
+.options-menu li:hover ul.drop-down-option{
+    display: block;
+}
+/*
+.search-div{
+    margin-top: 2.41rem;
+    margin-left: clamp(7rem, 10vw, 100rem);
+    display: inline-flex;
+    transform: translate(-50%,-50%);
+    transition: all 0.3s;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 23px;
+    border: 4px solid #222831;
+    padding: 5px;  
+}
+
+.main-search-bar{
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 69%;
+    height: 81%;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+    margin-left: 18px;
+}
+
+.search-div img{
+    position: absolute;
+    height: 1.5rem;    
+}
+
+.search-div:hover{
+    width: 200px;
+}
+
+.search-div:hover input{
+    display: block;
+}
+
+.clicked-input{
+    width: 200px;
+}
+
+.clicked-input input{
+    display: block;
+}
+
+.suggest-search{ /*suggestion auto complete div, below search div*//*
+    background-color: white;
+    width: 92%;
+    margin-left: 3.1px;
+    margin-top: 1.55rem;
+    border-radius: 0px 0px 11px 11px ;
+}
+
+.suggest-search{
+    background-color: palevioletred;
+}
+
+.suggest-search a div{
+    text-decoration: none;
+    margin: 15px;
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.01rem;
+    font-weight: 500;
+    color: white;
+}
+
+.suggest-search hr{
+    border: dashed 0.01px yellowgreen;
+    border-radius: 23px;
+}
+
+.suggest-search div:hover{
+    background-color: #76ABAE;
+}
+*/
+.search-div{
+    display: none;
+}
+/*Main*/
+.main-content{    
+    background-color: #222831;
+}
+
+body{
+    background-color: #222831;
+}
+
+.main-container{
+    background-color: #222831;
+}
+
+.game-preview-container{
+    margin: 4.5rem 8rem 0.5rem 8rem;
+    padding: 2rem; /*inside*/
+    border-radius: 23px 23px 0px 0px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: medium;
+    background-color:#31363F;
+}
+
+.game-preview{
+    display: grid;
+    grid-template-columns: 45% 30% 25% ;
+    
+}
+
+.game-preview div{
+    padding: 10px;
+}
+
+.game-img{
+    grid-row: span 2;
+    padding: 0%;
+}
+
+.game-img img{
+    max-width: 100%;
+    margin: 0%;
+}
+
+.game-title{
+    font-size:2rem;
+    font-weight: 700;
+}
+
+.game-price{
+    display: grid;
+    place-content: center;
+    font-size: 1.7rem;
+    font-weight: 800;
+    text-shadow: rgba(86, 242, 72, 0.714) 2px 2px, black 3.5px 3.5px;
+}
+
+.game-creator a{
+    font-size:1.5rem;
+    font-weight: 400;
+    color: white;
+    text-decoration: underline;
+}
+
+.game-orig-price{
+    text-decoration: line-through;
+    font-size: 1.2rem;
+}
+
+.game-description{
+    padding: 10px;
+    text-align: justify;
+    padding: 20px;
+    font-size: 1.3rem;
+    border-top: solid 5px;
+}
+
+.game-hyperlinks{
+    padding: 10px;
+    
+}
+.game-hyperlinks a{
+    color: lightblue;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.game-creator p:hover{
+    background-color: #76ABAE;
+    color: white;
+}
+
+.game-hyperlinks a:hover{
+    background-color: #76ABAE;
+    color: white;
+}
+
+.modal{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin: 0%; /*because there are alot of margins in main*/
+    transform: translate(-50%,50%);
+    padding: 10px;
+    border-radius: 15px;
+    border: black double 10px;
+}
+
+.about-modal{
+    max-width: 60ch;
+    margin-top: 0;
+}
+
+.closing-modal{
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.closing-modal img{
+    height: 2rem;
+}
+
+.modal-content{
+    margin: 1rem;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+}
+
+.modalTitle{
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+.aboutContent{
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.currencyContent{
+    font-weight: 1.2rem;
+    font-weight: 500;
+    margin-right: 200px;
+}
+
+.currencyContent button{
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+
+.familyFilterContent{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-right: 200px;
+}
+
+.familyFilterContent button{
+    border-radius: 10px;
+    font-size: 1.3rem;
+    
+}
+
+.contact-us-modal hr{
+    border: dashed 0.01px black;
+}
+
+.contactUsContent{
+    font-size: 1.3rem;
+}
+
+.other{
+    margin: 0;
+    background-color: #31363F;
+    color: white;
+    border: #31363F solid;
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+}
+
+
+@media (max-width:1300px) {
+    .game-img img{
+        height: 8.5rem;
+    }
+    .game-title{
+        font-size: 1.4rem;
+    }
+    .game-price{
+        font-size: 1.1rem;
+    }
+    .game-creator a{
+        font-size: 0.9rem;
+    }
+    .game-description{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width:1000px) {
+    .game-img img{
+        height: 5rem;
+    }
+    .game-title{
+        font-size: 0.9rem;
+    }
+    .game-creator a{
+        font-size: 0.6rem;
+    }
+    .game-price{
+        font-size: 0.8rem;
+    }
+    .game-description{
+        font-size: 0.8rem;
+    }
+    .game-preview-container{
+        margin: 3rem 4rem 3rem 4rem;
+    }
+}
+
+@media (max-width: 800px) {
+    /*Navigations*/
+    #main-logo{
+        height: 3rem;
+    }
+    .options-menu li a{
+        font-size: 0.8rem;
+    }
+    .options-menu li a{
+        height: 32px;
+    }
+    .options-menu li.choices a{
+        font-weight: 700;
+        font-size: 0.8rem;
+    }
+    .options-menu li ul.drop-down-option{
+        width: 6rem; /*of drop-down menu outer background*/
+        height: auto;
+    }
+    .options-menu li ul.drop-down-option li{
+        height: 2.2rem;
+    }
+}
+
+@media (max-width:650px) {
+    .game-preview-container{
+        margin: 1rem 1.7rem 1rem 1.7rem;
+    }
+    .game-img img{
+        height: 3.5rem;
+    }
+    .game-title{
+        font-size: 0.7rem;
+    }
+    .game-creator a{
+        font-size: 0.5rem;
+    }
+    .game-price{
+        font-size: 0.66rem;
+    }
+    .game-description{
+        font-size: 0.6rem;
+        padding: 5px;
+    }
+    .game-hyperlinks{
+        padding: 3px;
+    }
+    .game-hyperlinks a{
+        font-size: 0.99rem;
+    }
+    .modal p, form, button, li, label{
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width:450px) {
+    /*Navigations*/
+    #main-logo{
+        height: 1.5rem;
+    }
+    .options-menu li a{
+        font-size: 0.6rem;
+    }
+    .options-menu li a{
+        height: auto;
+    }
+    .options-menu li.choices a{
+        font-weight: 700;
+        font-size: 0.6rem;
+    }
+    .options-menu li ul.drop-down-option{
+        width: 6rem; /*of drop-down menu outer background*/
+        height: auto;
+    }
+    .options-menu li ul.drop-down-option li{
+        height: 1.7rem;
+    }
+    /*main*/
+    .game-preview-container{
+        margin: 0.5rem 0.8rem 0.5rem 0.8rem;
+    }
+    .game-img img{
+        height: 2rem;
+    }
+    .game-title{
+        font-size: 0.6rem;
+    }
+    .game-creator a{
+        font-size: 0.38rem;
+    }
+    .game-price{
+        font-size: 0.4rem;
+    }
+    .game-description{
+        font-size: 0.4rem;
+        padding: 3px;
+    }
+    .game-hyperlinks a {
+        font-size: 0.6rem;
+    }
+    /*modal*/
+    .modal p, form, button, li, label{
+        font-size: 0.5rem;
+    }
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pneuma</title>
+    <link rel="stylesheet" href="zStyleGames.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="navigation">
+            <a href="/index.html"><img id="main-logo" src="/webImage/Logo_whatadeal.png"/></a>
+            <ul class="options-menu">
+                <li class="options">
+                    <a><br/> Category &#x25BE;</a>
+                    <ul class="drop-down-option">
+                        <li class="choices"><a href="/index.html" >Action</a></li>
+                        <li class="choices"><a href="/index.html" >Adventure</a></li>
+                        <li class="choices"><a href="/index.html" >Casual</a></li>
+                        <li class="choices"><a href="/index.html" >Horror</a></li>
+                        <li class="choices"><a href="/index.html" >Simulation</a></li>
+                    </ul>
+                </li>
+                
+                <li class="options">
+                    <a><br/>Settings &#x25BE;</a>
+                    <ul class="drop-down-option">
+                        <li class="choices"><a class="open-currency">Currency</a></li>
+                        <li class="choices"><a class="open-family-filter">Family Filter</a></li>                        
+                        <li class="choices"><a class="open-contact-us">Contact Us</a></li>
+                    </ul>
+                </li>
+
+                <li class="options">
+                    <a class="open-about"><br/>About</a>
+                </li>
+            </ul>
+
+            <div class="search-div">
+                <input class="main-search-bar" placeholder="Search"/>
+                <a href="#"><img src="/webImage/search.png"/></a>
+                <div class="suggest-search">
+                </div>
+            </div>
+        </div>            
+
+        <div class="main-content">
+            <div class="game-preview-container">
+                <div class="game-preview">
+                    <div class="game-img">
+                        <img src="/gameImage/pneuma.jpg"/>
+                    </div>
+                    <div class="game-title">
+                        <p>Pneuma: Breath of Life</p>
+                    </div>
+                    <div class="game-price">
+                        <p>$5.65</p>    
+                    </div>
+                    <div class="game-creator">
+                        <a href="https://bevel.studio/"><p>by Bevel Studios</p></a> <!--Put the developers site here or wikipedia-->
+                    </div>
+                    <div class="game-orig-price game-price">
+                        <p>$8.70</p>
+                    </div>
+                </div>
+
+                <div class="game-description">
+                    <p>
+                        Pneuma: Breath of Life is an enthralling first person puzzler putting gamers’ minds to the test in a visually stunning world using the power of Unreal Engine 4. Pneuma provides players with a sense of awe and a relentless determination to solve every puzzle and progress through a narrated story of self-discovery, exploring the fundamental nature of being. This is the first person puzzler of 2015 which is designed to force players think outside the box and explore beyond what they know as reality.
+                        <br/><br/>
+                        Play as a god, ‘Pneuma’, and listen to his comical self-obsessed inner monologue whilst he takes you on a journey exploring and traversing his puzzling world in a story that can only be told through the interactive medium of video games. Rack your brain and progress through a series of environmental challenges that require perception, observation, and lateral thinking skills to succeed. Lift bridges, rotate platforms and move entire buildings all with the power of your mind. This game isn't about your skill with a controller, it's about how you perceive and analyse situations.
+                        <br/><br/>
+                        Push your brain to its limits in this exciting new first person puzzler as Pneuma contemplates the nature of reality and you explore the ontological mystery of the Breath of Life. 
+                        <br/><br/>
+                        PC players will be able to experience Pneuma’s unique puzzles in an exclusive virtual reality mode through the power of the Oculus Rift DK2. The game play mechanics in Pneuma revolve around your observation skills. Actually being able to physically move your head to look at and control objects to solve puzzles with the combined power of your sight & mind is something we feel Oculus Rift users need to experience. Pneuma is a challenging and mind bending puzzling game with an immersive story, and virtual reality only adds to that experience.                   
+                    </p>
+                </div>
+
+                <div class="game-hyperlinks">
+                    <a href="https://adventuregamers.com/videos/view/pneuma_breath_of_life">Game Community</a>
+                    <br/>
+                    <a href="https://store.steampowered.com/app/347440/Pneuma_Breath_of_Life/?curator_clanid=6859154">Download Game</a>
+                </div>        
+            </div>
+        </div>
+            
+        </div>
+
+        <dialog class="about-modal modal">
+            <div class="close-about-modal closing-modal">
+                <img src="/webImage/close.png"/>
+            </div>
+            <div class="modal-content">
+                <p class="modalTitle">About:</p>
+                <p class="aboutContent">
+                    <b>WhataDeal</b> is a website on where you can view Steam Discounts. The games that are displayed are unpopular games having less than 10,000 reviews. The website aims to promote these underrated games, for it to recieve the credits that it deserves.
+                </p>
+            </div>
+        </dialog>
+
+        <dialog class="currency-modal modal">
+            <div class="close-currency-modal closing-modal">
+                <img src="/webImage/close.png"/>
+            </div>
+            <div class="modal-content">
+                <p class="modalTitle">Currency:</p>
+                <form class="currencyContent">
+                    <input type="radio" name="currencyForm" value="dollar" id="dollar"/>
+                    <label for="dollar">Dollar</label><br/>
+                    <input type="radio" name="currencyForm" value="euro" id="euro"/>
+                    <label for="euro">Euro</label><br/>
+                    <input type="radio" name="currencyForm" value="phpeso" id="phpeso"/>
+                    <label for="phpeso">Philippine Peso</label><br/>
+                    <input type="radio" name="currencyForm" value="pound" id="pound"/>
+                    <label for="pound">Pound Sterling</label><br/>
+                    <br/>
+                    <button type="button" id="changeCurrency">Change</button>
+                    <!--though the id here wasn't used, it is still good practice to put it here,
+                    also might me useful in the future-->
+                </form>
+            </div>
+        </dialog>
+
+        <dialog class="family-filter-modal modal">
+            <div class="close-family-filter-modal closing-modal">
+                <img src="/webImage/close.png"/>
+            </div>
+            <div class="modal-content">
+                <p class="modalTitle">Family Filter:</p>
+                <form class="familyFilterContent">
+                    <input type="radio" name="familyFilterForm" value="yes" id="familyFilterFormYes"/>
+                    <label>Yes</label><br/>
+                    <input type="radio" name="familyFilterForm" value="no" id="familyFilterFormNo"/>
+                    <label>No</label><br/>
+                    <br/>
+                    <button type="button" id="changeFamilyFilter">Ok</button>
+                </form>
+            </div>
+        </dialog>
+
+        <dialog class="contact-us-modal modal">
+            <div class="close-contact-us-modal closing-modal">
+                <img src="/webImage/close.png"/>
+            </div>
+            <div class="modal-content">
+                <p class="modalTitle">Contact Us</p>
+                <hr/>
+                <ul class="contactUsContent">
+                    <li>Gmail: <br/><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvrcSWrsnzWxhPGBzzzWxScVCsLhnwBcBSFNVBGBNcNtNmFXszrVrPFRHBDSkcVnHNrMHL">whatadeal2024@gmail.com</a></li><br/>
+                    <li>Facebook: <br/><a href="https://www.facebook.com/profile.php?id=61558948372207">facebook/WhataDeal</a></li><br/>
+                    <li>Discord: <br/><a href="https://discord.gg/TVmTp2stUg">discord.gg/WhataDeal</a></li><br/>
+                </ul>
+            </div>
+        </dialog>
+
+        <footer>
+                <div class="other">
+                    <img src="/webImage/Logo_whatadeal.png"/>
+                    <p>&#169; 2023-2024 WhataDeal. All Rights Reserved.</p>
+                </div>
+            </footer>
+    </div>
+
+    <script src="zzScript.js"></script>    
+</body>
+</html>

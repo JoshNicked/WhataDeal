@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Of Defeat</title>
+    <link rel="stylesheet" href="zStyleGames.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="navigation">
+            <a href="/index.html"><img id="main-logo" src="/webImage/Logo_whatadeal.png"/></a>
+            <ul class="options-menu">
+                <li class="options">
+                    <a><br/> Category &#x25BE;</a>
+                    <ul class="drop-down-option">
+                        <li class="choices"><a href="/index.html" >Action</a></li>
+                        <li class="choices"><a href="/index.html" >Adventure</a></li>
+                        <li class="choices"><a href="/index.html" >Casual</a></li>
+                        <li class="choices"><a href="/index.html" >Horror</a></li>
+                        <li class="choices"><a href="/index.html" >Simulation</a></li>
+                    </ul>
+                </li>
+                
+                <li class="options">
+                    <a><br/>Settings &#x25BE;</a>
+                    <ul class="drop-down-option">
+                        <li class="choices"><a class="open-currency">Currency</a></li>
+                        <li class="choices"><a class="open-family-filter">Family Filter</a></li>                        
+                        <li class="choices"><a class="open-contact-us">Contact Us</a></li>
+                    </ul>
+                </li>
+
+                <li class="options">
+                    <a class="open-about"><br/>About</a>
+                </li>
+            </ul>
+
+            <div class="search-div">
+                <input class="main-search-bar" placeholder="Search"/>
+                <a href="#"><img src="/webImage/search.png"/></a>
+                <div class="suggest-search">
+                </div>
+            </div>
+        </div>            
+
+        <div class="main-content">
+            <div class="game-preview-container">
+                <div class="game-preview">
+                    <div class="game-img">
+                        <img src="/gameImage/dayOfDefeat.jpg"/>
+                    </div>
+                    <div class="game-title">
+                        <p>Day Of Defeat</p>
+                    </div>
+                    <div class="game-price">
+                        <p>$2.70</p>    
+                    </div>
+                    <div class="game-creator">
+                        <a href="https://www.valvesoftware.com/en/"><p>by Valve</p></a> <!--Put the developers site here or wikipedia-->
+                    </div>
+                    <div class="game-orig-price game-price">
+                        <p>$3.00</p>
+                    </div>
+                </div>
+
+                <div class="game-description">
+                    <p>
+                        Enlist in an intense brand of Axis vs. Allied teamplay set in the WWII European Theatre of Operations. Players assume the role of light/assault/heavy infantry, sniper or machine-gunner class, each with a unique arsenal of historical weaponry at their disposal. 
+                        Missions are based on key historical operations. And, as war rages, players must work together with their squad to accomplish a variety of mission-specific objectives.                  
+                        <br/><br/>
+                        Day of Defeat is a team-based multiplayer first-person shooter video game set in the European theatre of World War II on the Western front. Originally a modification of the 1998 game Half-Life, the rights of the modification were purchased by Valve and released as a full retail title in 2003.
+                        in the midst of World War II, Day of Defeat includes no single-player campaign, with focus left only on the game's multiplayer aspects. The game favors teamwork and features objective-based gameplay in combination with its system of classes. Maps are primarily made up of narrow paths, all of which typically lead to a few key locations. 
+                        <br><br/>
+                        An official remake of the game, Day of Defeat: Source, was released by Valve in 2005. Day of Defeat is a multiplayer first-person shooter that simulates squad-level infantry combat between the adversaries of World War II's European Theatre; the Allies and the Axis powers. Players can choose to join either the Allied or Axis armies, with the Allies include the United States or Great Britain and the Axis include Germany.
+                        <br/><br/>
+                        A round begins with two opposing teams starting simultaneously in their respective spawn area of a map, both acting towards the goal of achieving their respective objectives whilst preventing the enemy team from accomplishing theirs. A round ends when one team accomplishes all of its objectives, with that team claiming victory. Eventually, the game ends with the expiration of a set time limit, and the team with the most objectives achieved is the winning team regardless of kills or casualties, except in the case of both teams having not achieved any objectives or having achieved the same number of objectives.
+                        <br/><br/>
+                        Weaponry in the game attempts to realistically portray those that would be found in World War II, and the gameplay reflects this aesthetic choice. Recoil can be heavy and the game doesn't allow the player to fire while running or jumping. The game also features a stamina bar, preventing the player from sprinting for long periods of time and forcing them to actively conserve energy.
+                    
+                    
+                    </p>
+                </div>
+
+                <div class="game-hyperlinks">
+                    <a href="https://developer.valvesoftware.com/wiki/Day_of_Defeat">Game Community</a>
+                    <br/>
+                    <a href="https://store.steampowered.com/app/30/Day_of_Defeat/">Download Game</a>
+                </div>
+                    
+            </div>
+        </div>
+            
+        </div>
+
+        <dialog class="about-modal modal">
+            <div class="close-about-modal closing-modal">
+                <img src="/webImage/close.png"/>
+            </div>
+            <div class="modal-content">
+                <p class="modalTitle">About:</p>
+                <p class="aboutContent">
+                    <b>WhataDeal</b> is a website on where you can view Steam Discounts. The games that are displayed are unpopular games having less than 10,000 reviews. The website aims to promote these underrated games, for it to recieve the credits that it deserves.
+                </p>
+            </div>
+        </dialog>
+
+        <dialog class="currency-modal modal">
+            <div class="close-currency-modal closing-modal">
+                <img src="/webImage/close.png"/>
+            </div>
+            <div class="modal-content">
+                <p class="modalTitle">Currency:</p>
+                <form class="currencyContent">
+                    <input type="radio" name="currencyForm" value="dollar" id="dollar"/>
+                    <label for="dollar">Dollar</label><br/>
+                    <input type="radio" name="currencyForm" value="euro" id="euro"/>
+                    <label for="euro">Euro</label><br/>
+                    <input type="radio" name="currencyForm" value="phpeso" id="phpeso"/>
+                    <label for="phpeso">Philippine Peso</label><br/>
+                    <input type="radio" name="currencyForm" value="pound" id="pound"/>
+                    <label for="pound">Pound Sterling</label><br/>
+                    <br/>
+                    <button type="button" id="changeCurrency">Change</button>
+                    <!--though the id here wasn't used, it is still good practice to put it here,
+                    also might me useful in the future-->
+                </form>
+            </div>
+        </dialog>
+
+        <dialog class="family-filter-modal modal">
+            <div class="close-family-filter-modal closing-modal">
+                <img src="/webImage/close.png"/>
+            </div>
+            <div class="modal-content">
+                <p class="modalTitle">Family Filter:</p>
+                <form class="familyFilterContent">
+                    <input type="radio" name="familyFilterForm" value="yes" id="familyFilterFormYes"/>
+                    <label>Yes</label><br/>
+                    <input type="radio" name="familyFilterForm" value="no" id="familyFilterFormNo"/>
+                    <label>No</label><br/>
+                    <br/>
+                    <button type="button" id="changeFamilyFilter">Ok</button>
+                </form>
+            </div>
+        </dialog>
+
+        <dialog class="contact-us-modal modal">
+            <div class="close-contact-us-modal closing-modal">
+                <img src="/webImage/close.png"/>
+            </div>
+            <div class="modal-content">
+                <p class="modalTitle">Contact Us</p>
+                <hr/>
+                <ul class="contactUsContent">
+                    <li>Gmail: <br/><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvrcSWrsnzWxhPGBzzzWxScVCsLhnwBcBSFNVBGBNcNtNmFXszrVrPFRHBDSkcVnHNrMHL">whatadeal2024@gmail.com</a></li><br/>
+                    <li>Facebook: <br/><a href="https://www.facebook.com/profile.php?id=61558948372207">facebook/WhataDeal</a></li><br/>
+                    <li>Discord: <br/><a href="https://discord.gg/TVmTp2stUg">discord.gg/WhataDeal</a></li><br/>
+                </ul>
+            </div>
+        </dialog>
+
+        <footer>
+                <div class="other">
+                    <img src="/webImage/Logo_whatadeal.png"/>
+                    <p>&#169; 2023-2024 WhataDeal. All Rights Reserved.</p>
+                </div>
+        </footer>
+    </div>
+
+    <script src="zzScript.js"></script>    
+</body>
+</html>

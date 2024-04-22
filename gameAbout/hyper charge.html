@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyper Charge</title>
+    <link rel="stylesheet" href="zStyleGames.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="navigation">
+            <a href="/index.html"><img id="main-logo" src="/webImage/Logo_whatadeal.png"/></a>
+            <ul class="options-menu">
+                <li class="options">
+                    <a><br/> Category &#x25BE;</a>
+                    <ul class="drop-down-option">
+                        <li class="choices"><a href="/index.html" >Action</a></li>
+                        <li class="choices"><a href="/index.html" >Adventure</a></li>
+                        <li class="choices"><a href="/index.html" >Casual</a></li>
+                        <li class="choices"><a href="/index.html" >Horror</a></li>
+                        <li class="choices"><a href="/index.html" >Simulation</a></li>
+                    </ul>
+                </li>
+                
+                <li class="options">
+                    <a><br/>Settings &#x25BE;</a>
+                    <ul class="drop-down-option">
+                        <li class="choices"><a class="open-currency">Currency</a></li>
+                        <li class="choices"><a class="open-family-filter">Family Filter</a></li>                        
+                        <li class="choices"><a class="open-contact-us">Contact Us</a></li>
+                    </ul>
+                </li>
+
+                <li class="options">
+                    <a class="open-about"><br/>About</a>
+                </li>
+            </ul>
+
+            <div class="search-div">
+                <input class="main-search-bar" placeholder="Search"/>
+                <a href="#"><img src="/webImage/search.png"/></a>
+                <div class="suggest-search">
+                </div>
+            </div>
+        </div>            
+
+        <div class="main-content">
+            <div class="game-preview-container">
+                <div class="game-preview">
+                    <div class="game-img">
+                        <img src="/gameImage/hyperCharge.jpg"/>
+                    </div>
+                    <div class="game-title">
+                        <p>Hyper Charge</p>
+                    </div>
+                    <div class="game-price">
+                        <p>$11.48</p>    
+                    </div>
+                    <div class="game-creator">
+                        <a href="http://www.digitalcybercherries.com/"><p>by Digital Crimes</p></a> <!--Put the developers site here or wikipedia-->
+                    </div>
+                    <div class="game-orig-price game-price">
+                        <p>$16.40</p>
+                    </div>
+                </div>
+
+                <div class="game-description">
+                    <p>
+                        Hypercharge is a first and third-person shooter action figure game you've always dreamed of! Grab your friends, complete objectives, defend the Hypercore against waves of weaponized toys, and defeat Major Evil together in the story campaign!
+                        <br/><br/>
+                        There was once an ancient line of action figures, who created a magical power source that would allow humans to keep their favourite childhood memories of their toys. This ancient power source is known as the Hypercore. Inside the Hypercore are the beloved memories of our favorite toys. 
+                        If Major Evil destroys it, these memories will disappear forever. Defend it with everything you've got, or see our cherished toys turn into lost treasures of the past!                    
+                        <br/><br/>
+                        Hypercharge: Unboxed is designed to support cooperative gameplay, allowing for 1-4 players in online and local co-op modes, with difficulty scaling to accommodate the number of players. It also supports offline play with player bots, full split-screen for online/local co-op, and features both a wave-based shooter mode with a story campaign and classic player versus player modes accommodating up to eight players.
+                        In Hypercharge: Unboxed, the primary objective is to complete a story-driven campaign, focusing on defending the Hypercore against successive enemy waves and accomplishing various tasks. 
+                        <br/><br/>
+                        Throughout the game, players engage in exploration to discover weapons, resources, and hidden items essential for surviving the attacks led by the antagonist, Major Evil. This gameplay combines strategic defense elements with exploration and resource management, encouraging players to strategically prepare for each challenge the game presents.
+                        <br/><br/>
+                        Distinctly, Hypercharge: Unboxed aims to provide a gaming experience that combines nostalgia with modern gameplay mechanics, explicitly avoiding pay-to-progress models. Instead, it focuses on player skill and teamwork. The game also features character customization, allowing players to unlock new action figures by achieving specific gameplay milestones, thereby promoting a philosophy against pay-to-win practices philosophy.
+                    </p>
+                </div>
+
+                <div class="game-hyperlinks">
+                    <a href="https://hypercharge-unboxed.fandom.com/wiki/HYPERCHARGE:_Unboxed">Game Community</a>
+                    <br/>
+                    <a href="https://store.steampowered.com/app/523660/HYPERCHARGE_Unboxed/">Download Game</a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <dialog class="about-modal modal">
+            <div class="close-about-modal closing-modal">
+                <img src="/webImage/close.png"/>
+            </div>
+            <div class="modal-content">
+                <p class="modalTitle">About:</p>
+                <p class="aboutContent">
+                    <b>WhataDeal</b> is a website on where you can view Steam Discounts. The games that are displayed are unpopular games having less than 10,000 reviews. The website aims to promote these underrated games, for it to recieve the credits that it deserves.
+                </p>
+            </div>
+        </dialog>
+
+        <dialog class="currency-modal modal">
+            <div class="close-currency-modal closing-modal">
+                <img src="/webImage/close.png"/>
+            </div>
+            <div class="modal-content">
+                <p class="modalTitle">Currency:</p>
+                <form class="currencyContent">
+                    <input type="radio" name="currencyForm" value="dollar" id="dollar"/>
+                    <label for="dollar">Dollar</label><br/>
+                    <input type="radio" name="currencyForm" value="euro" id="euro"/>
+                    <label for="euro">Euro</label><br/>
+                    <input type="radio" name="currencyForm" value="phpeso" id="phpeso"/>
+                    <label for="phpeso">Philippine Peso</label><br/>
+                    <input type="radio" name="currencyForm" value="pound" id="pound"/>
+                    <label for="pound">Pound Sterling</label><br/>
+                    <br/>
+                    <button type="button" id="changeCurrency">Change</button>
+                    <!--though the id here wasn't used, it is still good practice to put it here,
+                    also might me useful in the future-->
+                </form>
+            </div>
+        </dialog>
+
+        <dialog class="family-filter-modal modal">
+            <div class="close-family-filter-modal closing-modal">
+                <img src="/webImage/close.png"/>
+            </div>
+            <div class="modal-content">
+                <p class="modalTitle">Family Filter:</p>
+                <form class="familyFilterContent">
+                    <input type="radio" name="familyFilterForm" value="yes" id="familyFilterFormYes"/>
+                    <label>Yes</label><br/>
+                    <input type="radio" name="familyFilterForm" value="no" id="familyFilterFormNo"/>
+                    <label>No</label><br/>
+                    <br/>
+                    <button type="button" id="changeFamilyFilter">Ok</button>
+                </form>
+            </div>
+        </dialog>
+
+        <dialog class="contact-us-modal modal">
+            <div class="close-contact-us-modal closing-modal">
+                <img src="/webImage/close.png"/>
+            </div>
+            <div class="modal-content">
+                <p class="modalTitle">Contact Us</p>
+                <hr/>
+                <ul class="contactUsContent">
+                    <li>Gmail: <br/><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvrcSWrsnzWxhPGBzzzWxScVCsLhnwBcBSFNVBGBNcNtNmFXszrVrPFRHBDSkcVnHNrMHL">whatadeal2024@gmail.com</a></li><br/>
+                    <li>Facebook: <br/><a href="https://www.facebook.com/profile.php?id=61558948372207">facebook/WhataDeal</a></li><br/>
+                    <li>Discord: <br/><a href="https://discord.gg/TVmTp2stUg">discord.gg/WhataDeal</a></li><br/>
+                </ul>
+            </div>
+        </dialog>
+
+        <footer>
+                <div class="other">
+                    <img src="/webImage/Logo_whatadeal.png"/>
+                    <p>&#169; 2023-2024 WhataDeal. All Rights Reserved.</p>
+                </div>
+            </footer>
+    </div>
+
+    <script src="zzScript.js"></script>    
+</body>
+</html>
